@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Regra de Três Ninja 🥷 | Matemática com Anime</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Bangers&family=Poppins:wght@300;400;600;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Partículas de fundo -->
+    <canvas id="particles"></canvas>
+
+    <!-- NAVBAR -->
+    <nav class="navbar">
+        <div class="logo">⚡ <span>MathAnime</span></div>
+        <ul class="nav-links">
+            <li><a href="#hero">Início</a></li>
+            <li><a href="#simples">Simples</a></li>
+            <li><a href="#composta">Composta</a></li>
+            <li><a href="#calculadora">Calculadora</a></li>
+        </ul>
+        <button class="menu-toggle">☰</button>
+    </nav>
+
+    <!-- HERO -->
+    <section id="hero" class="hero">
+        <div class="hero-content">
+            <span class="badge animate-pulse">🔥 Nova Temporada de Matemática</span>
+            <h1 class="glitch" data-text="REGRA DE TRÊS">REGRA DE TRÊS</h1>
+            <h2 class="subtitle">O <span class="highlight">poder supremo</span> da proporcionalidade!</h2>
+            <p class="hero-text">Domine todas as variações da regra de três com a ajuda dos seus personagens favoritos de anime. De Naruto a Goku, todos usam matemática para vencer!</p>
+            <div class="hero-buttons">
+                <a href="#simples" class="btn btn-primary">Começar Treino 🥋</a>
+                <a href="#calculadora" class="btn btn-secondary">Calculadora Mágica ✨</a>
+            </div>
+            <div class="stats">
+                <div class="stat-item">
+                    <span class="stat-number" data-target="4">0</span>
+                    <span class="stat-label">Tipos</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number" data-target="6">0</span>
+                    <span class="stat-label">Exemplos</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number" data-target="100">0</span>
+                    <span class="stat-label">% Divertido</span>
+                </div>
+            </div>
+        </div>
+        <div class="hero-character">
+            <div class="floating-char">🥷</div>
+        </div>
+    </section>
+
+    <!-- INTRODUÇÃO -->
+    <section class="intro">
+        <div class="container">
+            <h2 class="section-title">O que é <span class="highlight">Regra de Três</span>?</h2>
+            <p class="intro-text">A regra de três é um método matemático usado para resolver problemas que envolvem <strong>grandezas proporcionais</strong>. Ela permite encontrar um valor desconhecido quando conhecemos três outros valores relacionados.</p>
+            
+            <div class="types-grid">
+                <div class="type-card reveal">
+                    <div class="type-icon">➡️</div>
+                    <h3>Simples Direta</h3>
+                    <p>Grandezas diretamente proporcionais</p>
+                </div>
+                <div class="type-card reveal">
+                    <div class="type-icon">🔄</div>
+                    <h3>Simples Inversa</h3>
+                    <p>Grandezas inversamente proporcionais</p>
+                </div>
+                <div class="type-card reveal">
+                    <div class="type-icon">🔀</div>
+                    <h3>Composta Direta</h3>
+                    <p>Múltiplas grandezas diretas</p>
+                </div>
+                <div class="type-card reveal">
+                    <div class="type-icon">⚡</div>
+                    <h3>Composta Mista</h3>
+                    <p>Grandezas diretas e inversas</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- REGRA DE TRÊS SIMPLES DIRETA -->
+    <section id="simples" class="section-direct">
+        <div class="container">
+            <div class="anime-card">
+                <div class="anime-header naruto-theme">
+                    <div class="anime-avatar">🍥</div>
+                    <div>
+                        <h3>Naruto Uzumaki</h3>
+                        <span class="anime-tag">Direta</span>
+                    </div>
+                </div>
+                <div class="anime-content">
+                    <h2>Regra de Três <span class="highlight">Simples Direta</span></h2>
+                    <p class="formula-box">Quando uma grandeza AUMENTA, a outra também AUMENTA na mesma proporção.</p>
+                    
+                    <div class="example-box">
+                        <h4>📖 Missão do Naruto:</h4>
+                        <p>Se Naruto faz <strong>3 clones das sombras</strong> em <strong>2 minutos</strong>, quantos clones ele faz em <strong>10 minutos</strong>?</p>
+                        
+                        <div class="math-solution">
+                            <div class="math-row">
+                                <span>Clones</span>
+                                <span>Tempo</span>
+                            </div>
+                            <div class="math-row">
+                                <span>3</span>
+                                <span>2 min</span>
+                            </div>
+                            <div class="math-row">
+                                <span>x</span>
+                                <span>10 min</span>
+                            </div>
+                        </div>
+
+                        <div class="solution-steps">
+                            <p><strong>Passo 1:</strong> Montar a proporção</p>
+                            <p class="math-formula">3 / x = 2 / 10</p>
+                            <p><strong>Passo 2:</strong> Multiplicar em cruz</p>
+                            <p class="math-formula">2x = 3 × 10</p>
+                            <p class="math-formula">2x = 30</p>
+                            <p><strong>Passo 3:</strong> Isolar x</p>
+                            <p class="math-formula">x = 30 / 2 = <span class="answer">15 clones!</span></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- REGRA DE TRÊS SIMPLES INVERSA -->
+    <section class="section-inverse">
+        <div class="container">
+            <div class="anime-card">
+                <div class="anime-header goku-theme">
+                    <div class="anime-avatar">🐉</div>
+                    <div>
+                        <h3>Son Goku</h3>
+                        <span class="anime-tag">Inversa</span>
+                    </div>
+                </div>
+                <div class="anime-content">
+                    <h2>Regra de Três <span class="highlight">Simples Inversa</span></h2>
+                    <p class="formula-box">Quando uma grandeza AUMENTA, a outra DIMINUI na mesma proporção.</p>
+                    
+                    <div class="example-box">
+                        <h4>📖 Treinamento do Goku:</h4>
+                        <p>Se Goku treina na <strong>gravidade 10x</strong> por <strong>6 horas</strong>, por quanto tempo ele deve treinar na <strong>gravidade 100x</strong> para o mesmo efeito?</p>
+                        
+                        <div class="math-solution">
+                            <div class="math-row">
+                                <span>Gravidade</span>
+                                <span>Tempo</span>
+                            </div>
+                            <div class="math-row">
+                                <span>10x</span>
+                                <span>6 h</span>
+                            </div>
+                            <div class="math-row">
+                                <span>100x</span>
+                                <span>x</span>
+                            </div>
+                        </div>
+
+                        <div class="solution-steps">
+                            <p><strong>Passo 1:</strong> Inverter a proporção (grandezas inversas!)</p>
+                            <p class="math-formula">10 / 100 = x / 6</p>
+                            <p><strong>Passo 2:</strong> Multiplicar em cruz</p>
+                            <p class="math-formula">100x = 10 × 6</p>
+                            <p class="math-formula">100x = 60</p>
+                            <p><strong>Passo 3:</strong> Isolar x</p>
+                            <p class="math-formula">x = 60 / 100 = <span class="answer">0,6 horas (36 min)</span></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- REGRA DE TRÊS COMPOSTA -->
+    <section id="composta" class="section-composta">
+        <div class="container">
+            <div class="anime-card">
+                <div class="anime-header luffy-theme">
+                    <div class="anime-avatar">🏴‍☠️</div>
+                    <div>
+                        <h3>Monkey D. Luffy</h3>
+                        <span class="anime-tag">Composta</span>
+                    </div>
+                </div>
+                <div class="anime-content">
+                    <h2>Regra de Três <span class="highlight">Composta</span></h2>
+                    <p class="formula-box">Envolve <strong>mais de duas grandezas</strong>. Precisamos analisar cada uma separadamente.</p>
+                    
+                    <div class="example-box">
+                        <h4>📖 Aventura dos Chapéus de Palha:</h4>
+                        <p>Se <strong>5 piratas</strong> comem <strong>20 kg de carne</strong> em <strong>4 dias</strong>, quantos kg <strong>10 piratas</strong> comem em <strong>6 dias</strong>?</p>
+                        
+                        <div class="math-solution">
+                            <div class="math-row">
+                                <span>Piratas</span>
+                                <span>Carne (kg)</span>
+                                <span>Dias</span>
+                            </div>
+                            <div class="math-row">
+                                <span>5</span>
+                                <span>20</span>
+                                <span>4</span>
+                            </div>
+                            <div class="math-row">
+                                <span>10</span>
+                                <span>x</span>
+                                <span>6</span>
+                            </div>
+                        </div>
+
+                        <div class="solution-steps">
+                            <p><strong>Análise:</strong> Mais piratas → mais carne (direta). Mais dias → mais carne (direta).</p>
+                            <p><strong>Fórmula:</strong></p>
+                            <p class="math-formula">x / 20 = (10/5) × (6/4)</p>
+                            <p class="math-formula">x / 20 = 2 × 1,5</p>
+                            <p class="math-formula">x / 20 = 3</p>
+                            <p class="math-formula">x = <span class="answer">60 kg de carne!</span></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- REGRA DE TRÊS COMPOSTA MISTA -->
+    <section class="section-mista">
+        <div class="container">
+            <div class="anime-card">
+                <div class="anime-header light-theme">
+                    <div class="anime-avatar">📓</div>
+                    <div>
+                        <h3>Light Yagami</h3>
+                        <span class="anime-tag">Composta Mista</span>
+                    </div>
+                </div>
+                <div class="anime-content">
+                    <h2>Regra de Três <span class="highlight">Composta Mista</span></h2>
+                    <p class="formula-box">Quando há grandezas <strong>diretas E inversas</strong> ao mesmo tempo. O desafio supremo!</p>
+                    
+                    <div class="example-box">
+                        <h4>📖 Plano do Kira:</h4>
+                        <p>Se <strong>4 Shinigamis</strong> escrevem <strong>80 nomes</strong> em <strong>5 horas</strong> trabalhando <strong>6 horas/dia</strong>, quantos nomes <strong>6 Shinigamis</strong> escrevem em <strong>10 dias</strong> trabalhando <strong>8 horas/dia</strong>?</p>
+                        
+                        <div class="math-solution">
+                            <div class="math-row">
+                                <span>Shinigamis</span>
+                                <span>Nomes</span>
+                                <span>Dias</span>
+                                <span>h/dia</span>
+                            </div>
+                            <div class="math-row">
+                                <span>4</span>
+                                <span>80</span>
+                                <span>5</span>
+                                <span>6</span>
+                            </div>
+                            <div class="math-row">
+                                <span>6</span>
+                                <span>x</span>
+                                <span>10</span>
+                                <span>8</span>
+                            </div>
+                        </div>
+
+                        <div class="solution-steps">
+                            <p><strong>Análise:</strong> Mais Shinigamis → mais nomes (direta). Mais dias → mais nomes (direta). Mais horas/dia → mais nomes (direta).</p>
+                            <p class="math-formula">x / 80 = (6/4) × (10/5) × (8/6)</p>
+                            <p class="math-formula">x / 80 = 1,5 × 2 × 1,33</p>
+                            <p class="math-formula">x / 80 = 4</p>
+                            <p class="math-formula">x = <span class="answer">320 nomes!</span></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CALCULADORA INTERATIVA -->
+    <section id="calculadora" class="calculator-section">
+        <div class="container">
+            <h2 class="section-title">Calculadora <span class="highlight">Ninja</span> 🥷</h2>
+            <p class="calc-intro">Teste seus conhecimentos! Escolha o tipo e resolva problemas.</p>
+            
+            <div class="calculator">
+                <div class="calc-type-selector">
+                    <button class="type-btn active" data-type="direta">➡️ Direta</button>
+                    <button class="type-btn" data-type="inversa">🔄 Inversa</button>
+                </div>
+
+                <div class="calc-inputs">
+                    <div class="calc-row">
+                        <input type="number" id="val1" placeholder="Valor A1" class="calc-input">
+                        <input type="number" id="val2" placeholder="Valor A2" class="calc-input">
+                    </div>
+                    <div class="calc-row">
+                        <input type="number" id="val3" placeholder="Valor B1" class="calc-input">
+                        <input type="number" id="val4" placeholder="B2 = ?" class="calc-input" disabled>
+                    </div>
+                </div>
+
+                <button id="calcBtn" class="btn btn-primary calc-btn">Calcular ✨</button>
+                <button id="clearBtn" class="btn btn-secondary calc-btn">Limpar 🗑️</button>
+
+                <div id="calcResult" class="calc-result hidden">
+                    <p class="result-label">Resultado:</p>
+                    <p class="result-value" id="resultValue"></p>
+                    <p class="result-explanation" id="resultExplanation"></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-logo">⚡ MathAnime</div>
+            <p>Aprender matemática nunca foi tão épico!</p>
+            <div class="footer-links">
+                <a href="#hero">Início</a>
+                <a href="#simples">Simples</a>
+                <a href="#composta">Composta</a>
+                <a href="#calculadora">Calculadora</a>
+            </div>
+            <p class="copyright">© 2026 MathAnime — Feito com 💜 para Clailson</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
